@@ -1,6 +1,7 @@
 /***  Default Styles ***/
 body {
   padding: 0;
+  border-bottom: 6px solid red;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

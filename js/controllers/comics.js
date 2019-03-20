@@ -18,7 +18,7 @@ angular.module('marvelAppApp')
     
     $http.get($scope.baseUrl, {
       params: {
-        limit: 24,
+        limit: 100,
         ts: $scope.timeStamp,
         apikey: $scope.publicKey,
         hash: $scope.hash
