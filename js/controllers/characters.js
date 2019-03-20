@@ -13,7 +13,7 @@ angular.module('marvelAppApp')
         $scope.timeStamp =  Date.now();
         $scope.publicKey ="80708435341cc86ac0b446aa5bae5a2b";
         $scope.privateKey = "8238b42dbc74e7065c0d6916dc9595bf3de8e085";
-        $scope.baseUrl = "http://gateway.marvel.com/v1/public/characters";
+        $scope.baseUrl = "https://gateway.marvel.com/v1/public/characters";
         $scope.hash = md5($scope.timeStamp+$scope.privateKey+$scope.publicKey);
         
         var loopRequests = function(offset){
