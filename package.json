@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "mean stack portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "adam c",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "angular-material": "^1.1.10",
+    "angular-route": "^1.7.5",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "nodemailer": "^4.7.0",
+    "xoauth2": "^1.2.0"
+  },
+  "homepage": "/"
+}

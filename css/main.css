@@ -1,0 +1,372 @@
+/***  Default Styles ***/
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 768px){
+  .header{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+/* Custom Hamburger Menu */
+#nav-icon{
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon span{
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 18px;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 36px;
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle{
+  border: unset !important;
+}
+
+.navbar-toggle{
+  margin: 0px;
+  padding: 8px 10px;
+}
+
+#nav-icon{
+  margin: unset !important;
+}
+
+#nav-icon span{
+  background: #f0141e;
+  height: 5px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+  margin-bottom: 0px !important;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/*** Container ***/
+@media screen and (min-width: 768px){
+  .container{
+    max-width: unset;
+  }
+}
+/*** NavBar ***/
+.navbar{
+  border-radius: 0%;
+  margin-bottom: 0%;
+}
+.navbar-default{
+  background-color: black;
+  border: none;
+}
+.container > .navbar-collapse{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-collapse{
+  padding: 0;
+}
+.navbar-nav{
+  float: right;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus{
+  background-color: transparent;
+  color: white;
+}
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > li > a:hover{
+  color: #b3b3b3;
+  background-color: #e7e7e700;
+}
+.navbar-default .navbar-nav > li > a{
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right;
+}
+.navbar-nav > li > a{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 60px;
+}
+/*** NavBar Brand ***/
+.navbar > .container .navbar-brand{
+  margin-left: 0%;
+}
+.navbar-brand{
+  padding: 0%;
+  height: unset;
+}
+
+/*** Page Title ***/
+.title-wrapper{
+  position: relative;
+}
+
+.title-wrapper h1::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  height: 20px;
+  background: black;
+  width: 900px;
+  transform: skew(-20deg, 0deg);
+  margin: 5px 12px 7px 0;
+}
+
+.title-wrapper h1{
+  position: relative;
+  display: inline-block;
+  margin: 40px 0;
+  font-weight: 900;
+}
+.title-bar:before{
+  content: '';
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.title-bar{
+  display: inline-flex;
+  background-color: #f1f1f1;
+  padding: 0px 20px 0px 0px;
+  margin: 15px 0;
+  color: #474747;
+  text-transform: uppercase;
+}
+
+/*** Comic Wrapper ***/
+.comic-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.comic-wrapper .item{
+  padding: 0;
+  width: 24%;
+  margin-right: 1.3%;
+  margin-bottom: 20px;
+}
+
+.comic-wrapper .item:nth-child(4n){
+  margin-right: 0%;
+}
+
+@media screen and (max-width: 600px){
+  .comic-wrapper .item{
+    width: 100%;
+  }
+}
+
+.comic-wrapper img{
+  width: 100%;
+  min-height: 350px;
+  max-height: 350px;
+  box-shadow: 5px 5px 5px #787878;
+}
+
+.comic-wrapper h1.title{
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.comic-wrapper h4.writer{
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.meta-info .published,
+.meta-info .writer,
+.meta-info .penciller,
+.meta-info .coverArtist{
+  width: 100%;
+  margin: 0;
+}
+
+/*** Load More Btn ***/
+.controls-wrapper{
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 6px solid red;
+}
+
+.controls{
+  text-align: center;
+  transform: skew(-20deg);
+  background-color: red;
+  margin: 20px auto 0;
+}
+
+.loadMoreBtn{
+  display: inline-block;
+  
+  font-size: 22px;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transform: skew(20deg);
+}
+
+.loadMoreBtn:hover{
+  text-decoration: none;
+  color: white;
+}
+
+/*** Footer ***/
+.footer{
+  padding: 0;
+  background-color: #49fcd4;
+}
+.footer p{
+  float: right;
+  margin: unset;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  text-shadow: 1px 1px #00848e;
+}
+#signature{
+  text-decoration: none;
+  cursor: pointer;
+}
